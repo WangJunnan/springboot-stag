@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    name: dev
+    username: root
+    password: dpjA8Z6XPXbvos
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://115.29.10.121:3306/souchecar?useUnicode=true&amp&characterEncoding=UTF-8&amp&allowMultiQueries=true
+    driver: com.mysql.jdbc.Driver
+    initialSize: 10
+    minIdle: 10
+    maxActive: 100
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    removeAbandoned: true
+  freemarker:
+    suffix: .html
+    template-loader-path: classpath:/html/
+    charset: UTF-8
+    cache: false
+    content-type: text/html
+server:
+  port: 8080
+  context-path: /
+
